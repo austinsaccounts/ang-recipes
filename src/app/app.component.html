@@ -1,10 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align: center">
   <h1>
     Welcome to, {{ this.title }}
   </h1>
   <p>a recipe should appear below</p>
-  <ul><li *ngFor="let recipe of recipes" > <br> {{ recipe.title }} 
-    <ol><li *ngFor="let ingredient of recipe.ingredients" > Ingredients Needed {{ this.ingredient.quantity }} of {{this.ingredient.title}}</li></ol>{{ recipe.directions }} </li></ul>
+  <ul><li *ngFor="let recipe of recipes" > <br> <span class=titleFormat>{{ recipe.title }}</span> 
+    <ol><li *ngFor="let ingredient of recipe.ingredients" > Ingredients Needed {{ this.ingredient.quantity }} of {{this.ingredient.title}}</li></ol> <span class='directionsFormat'>{{ recipe.directions }}</span> </li></ul>
 
 <router-outlet></router-outlet>

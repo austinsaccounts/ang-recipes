@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    justify-content: center;
+}
+ol li {
+    color: teal;
+    font-style: italic;
+    font-weight: lighter;
+}
+ol {
+    list-style: none;
+}
+ul {
+    list-style: none;
+}
+.directionsFormat {
+    font-weight: bold;
+}
+.titleFormat {
+    font-size: 2rem;
+}
