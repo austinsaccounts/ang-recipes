@@ -8,10 +8,19 @@ import { constructDependencies } from '@angular/core/src/di/reflective_provider'
 })
 export class AppComponent {
   title = 'ang-recipes';
-  firstRecipe: Recipe = new Recipe('raw-beefof-the-wellingstons', [
+  Recipe1: Recipe = new Recipe('beef-of-the-wellingstons', [
     new Ingredient('beef', 1),
     new Ingredient('salsa', 3)
   ], 'cook the beef untill it is welling-toned');
+  Recipe2: Recipe = new Recipe('steak tartar', [
+    new Ingredient('steak', 2),
+    new Ingredient('tartar', 22)
+  ], 'tar until steak is tar-tar-ed');
+  Recipe3: Recipe = new Recipe('egg-plant parm', [
+    new Ingredient('eggplant', 3),
+    new Ingredient('parm', 33)
+  ], 'plant the egg and parm');
+  recipes = [this.Recipe1, this.Recipe2, this.Recipe3];
 }
 export class Recipe {
   constructor(public title: string, public ingredients: Ingredient[], public directions: string) { }
